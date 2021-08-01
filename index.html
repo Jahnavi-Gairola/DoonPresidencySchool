@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doon Presidency School</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"> <img src="./images/logo.png"> </a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#course">COURSE</a></li>
+                <li><a href="#blog">BLOG</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+<div class="text-box" id="home">
+    <h1>
+        DOON PRESIDENCY SCHOOL
+    </h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Illo similique magni perspiciatis optio sequi ullam itaque nam repudiandae consectetur nostrum!
+    </p>
+    <a href="" class="hero-btn">Visit Us To Know More</a>
+</div>
+</section>
+
+<section class="about" id="about">
+    <div class="image">
+        <img src="./images/people-2557399_1920.jpg">
+    </div>
+    <div class="content">
+        <h3>why choose us?</h3>
+        <p id="pbg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur pariatur earum, temporibus inventore hic necessitatibus! Alias, cum facere porro a animi possimus corrupti laborum ullam ex, aperiam sequi corporis itaque. Illum dicta libero provident quam repellendus nisi pariatur molestias eos deserunt nihil natus, eaque mollitia inventore atque distinctio! Aliquam nihil dolorem vero placeat. Vel, numquam error culpa exercitationem dolorum a debitis quae tenetur quos libero eligendi quisquam cupiditate et suscipit, similique laudantium iste accusantium consequuntur modi dicta explicabo iure! Impedit in sunt incidunt voluptatibus facere omnis aspernatur corporis voluptatem necessitatibus, voluptatum dolores pariatur magni nemo iusto expedita doloribus eos tenetur.</p>
+        <p id="pbg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, quam laboriosam? Magnam, quis consequuntur porro itaque maxime corrupti. Quasi laudantium corrupti consequatur velit sit doloribus voluptatibus consequuntur adipisci voluptate neque.</p>
+        
+        <button onclick="btn()">Learn More</button>
+    </div>
+</section>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right= "0";
+    }
+    function hideMenu(){
+        navLinks.style.right= "-200px";
+    }
+</script>
+</body>
+</html>
