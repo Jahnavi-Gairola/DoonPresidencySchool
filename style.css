@@ -260,4 +260,48 @@ button:hover::after {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
+@media (max-width: 700px) {
+  .about .image {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 0px;
+            flex: 1 1 0;
+  }
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -ms-flex-wrap: none;
+        flex-wrap: none;
+    height: 135vh;
+  }
+  .about .image img {
+    height: 300px;
+    width: 300px;
+    padding-left: 0px;
+    padding-top: 50px;
+  }
+  .about .content {
+    -webkit-box-flex: unset;
+        -ms-flex: unset;
+            flex: unset;
+  }
+  .about .content h3 {
+    padding-top: 0px;
+    font-size: 30px;
+    color: crimson;
+  }
+  .about .content p {
+    float: left;
+    font-size: 12px;
+    color: white;
+    padding: 1rem 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */
