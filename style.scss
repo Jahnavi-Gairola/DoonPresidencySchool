@@ -231,3 +231,34 @@ button:hover::after{
     width: 100%;
     transition: 0.5s;
 }
+
+@media (max-width:700px) {
+    .about{
+        display: flex;
+        align-items: unset;
+        justify-content: unset;
+        flex-wrap: none;
+        height: 120vh;
+        }
+    .about .image img{
+        height: 200px;
+        width: 200px;
+        padding-left: 0px;
+        padding-top: 30px;
+    }
+    .about .content h3{
+        
+        padding-top: 30px;
+        font-size: 30px;
+        color: crimson;
+    }
+    .about .content p{
+        
+        float: left;
+        text-transform: lowercase;
+        font-size: 1rem;
+        color: white;
+        padding: 1rem 0;
+    }
+    
+}
