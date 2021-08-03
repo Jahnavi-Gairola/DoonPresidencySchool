@@ -1,10 +1,21 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Fugaz One', cursive;
+    
 }
 html{
     scroll-behavior: smooth;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .header{
@@ -42,6 +53,7 @@ nav img{
 }
 
 .nav-links ul li a{
+    font-family: 'Montserrat', sans-serif;
     color: white;
     text-decoration: none;
     font-size: 13px;
@@ -102,6 +114,7 @@ nav img{
     font-size: 18px;
     border-radius: 25px;
 }
+
 .hero-btn:hover{
     border: 1px solid white;
     background: crimson;
@@ -111,6 +124,284 @@ nav img{
 nav .fa{
     display: none;
 }
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    text-align: center;
+    background-image: url(./images/wood-1759566_1920.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.about .image{
+    flex: 1 1 40rem;
+}
+
+.about .image img{
+    height: 55vh;
+    width: 80%;
+    padding-left: 80px;
+    padding-top: 50px;
+    
+}
+
+.about .content{
+    flex: 50%;
+}
+
+.about .content h3{
+    padding-top: 50px;
+    font-size: 3.5rem;
+    color: crimson;
+}
+.about .content p{
+    text-transform: lowercase;
+    font-size: 1rem;
+    color: white;
+    padding: 1rem 0;
+}
+
+
+button{
+    font-size: 15px;
+    border-radius: 25px;
+    height: 50px;
+    width: 100px;
+    background-color: transparent;
+    color: crimson;
+}
+
+button::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: white;
+    display: block;
+    margin: auto;
+}
+button:hover::after{
+    width: 90%;
+    transition: 0.5s;
+}
+button:hover{
+    background-color: crimson;
+    color: white;
+}
+
+// Course Section
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#courses{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527));
+}
+
+#courses .courses{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+    
+}
+#courses .section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+#courses .section-title span{
+    color: crimson;
+}
+
+#courses .course-top{
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight:  300;
+    letter-spacing: .05rem;
+}
+
+#courses .course-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+#courses .course-item{
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(./images/courses.jpg);
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#courses .course-item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    opacity: .8;
+    z-index: -1;
+}
+
+#courses .icon{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+#courses .icon img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#courses .course-item h2{
+    font-size: 2rem;
+    color: crimson;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#courses .course-item h2 span{
+    color: white;
+}
+
+#courses .course-item h2:hover{
+    color: white;
+}
+#courses .course-item h2 span:hover{
+    color: crimson;
+}
+
+#courses .course-item p{
+    font-size: 1.4rem;
+    color: white;
+    text-align: left;
+    line-height: 1.9rem;
+}
+
+
+// End Course Section
+
+
+// CAMPUS
+
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus h1{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;;
+}
+.campus h1 span{
+    color: crimson;
+}
+.campus p{
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight:  300;
+    letter-spacing: .05rem;
+}
+
+
+.campus-col{
+    margin-top: 50px;
+    height: 700px;
+    width: 400px;
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.campus-col img{
+    width: 100%;
+    transition: all  0.5s;
+    display: block;
+}
+.campus-col:hover img{
+    transform: scale(1.2,1.2);
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s ;
+} 
+.layer:hover{
+    background: rgb(226,190,255);
+    background: linear-gradient(180deg, rgba(226,190,255,0.5970763305322129) 0%, rgba(166,103,255,0.5998774509803921) 42%, rgba(157,0,0,0.6026785714285714) 100%);
+}
+
+#dubai:hover{
+    background: rgb(192,190,255);
+    background: linear-gradient(180deg, rgba(192,190,255,0.5970763305322129) 0%, rgba(255,218,103,0.5998774509803921) 64%, rgba(0,0,0,0.6026785714285714) 100%);
+}
+
+#britain:hover{
+    background: rgb(190,255,253);
+    background: linear-gradient(180deg, rgba(190,255,253,0.5970763305322129) 0%, rgba(255,238,103,0.5550595238095238) 69%, rgba(13,117,0,0.5690651260504201) 100%);
+}
+.layer h3{
+    color: white;
+    width: 100%;
+    font-weight: 500;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
 
 @media (max-width:700px) {
     .text-box h1{
@@ -167,72 +458,7 @@ nav .fa{
     .nav-links ul li a:hover{
         color: white;
     }
-}
 
-.about{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-transform: uppercase;
-    text-align: center;
-    background-image: url(./images/wood-1759566_1920.jpg);
-    height: 100vh;
-    background-repeat: no-repeat;
-}
-
-.about .image{
-    flex: 1 1 40rem;
-}
-
-.about .image img{
-    height: 55vh;
-    width: 80%;
-    padding-left: 80px;
-    padding-top: 50px;
-    
-}
-
-.about .content{
-    flex: 50%;
-}
-
-.about .content h3{
-    padding-top: 50px;
-    font-size: 3.5rem;
-    color: crimson;
-}
-.about .content p{
-    text-transform: lowercase;
-    font-size: 1rem;
-    color: white;
-    padding: 1rem 0;
-}
-
-
-button{
-    font-size: 15px;
-    border-radius: 25px;
-    height: 50px;
-    width: 100px;
-    background-color: transparent;
-    color: crimson;
-}
-
-button::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: crimson;
-    display: block;
-    margin: auto;
-}
-button:hover::after{
-    width: 100%;
-    transition: 0.5s;
-}
-
-@media (max-width:700px) {
     .about .image{
         flex: 1 1 0;
     }
@@ -264,5 +490,86 @@ button:hover::after{
         color: white;
         padding: 1rem 0;
     }
+    #courses .section-title{
+        font-size: 2.5rem;
+        letter-spacing: .4rem;
+        line-height: 3rem;
+    }
+    #courses .course-top{
+        font-size: 12px;
+        line-height: 2rem;
+    }
+    
+    #courses .course-item{
+        flex-basis: 80%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        padding: 30px;
+        border-radius: 10px;
+        background-image: url(./images/courses.jpg);
+        background-size: cover;
+        margin: 10px 5%;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+    }
+    
+    #courses .course-item::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+        opacity: .8;
+        z-index: -1;
+    }
+    
+    #courses .icon{
+        height: 50px;
+        width: 50px;
+        
+    }
+    
+    #courses .course-item h2{
+        font-size: 1.7rem;
+        
+    }
+    
+    #courses .course-item p{
+        font-size: 1rem;
+        color: white;
+    }
+
+    .campus{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding-top: 50px;
+    }
+    .campus h1{
+        font-size: 2.5rem;
+        letter-spacing: .4rem;
+        line-height: 3rem;
+    }
+    
+    .campus p{
+        font-size: 12px;
+        line-height: 2rem;
+    }
+
+    
+    
+    
+
+
+    
+ 
+
+
+
     
 }

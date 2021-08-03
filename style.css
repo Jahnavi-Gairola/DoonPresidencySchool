@@ -1,11 +1,22 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Fugaz One', cursive;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .header {
@@ -51,6 +62,7 @@ nav img {
 }
 
 .nav-links ul li a {
+  font-family: 'Montserrat', sans-serif;
   color: white;
   text-decoration: none;
   font-size: 13px;
@@ -127,65 +139,6 @@ nav .fa {
   display: none;
 }
 
-@media (max-width: 700px) {
-  .text-box h1 {
-    font-size: 22px;
-  }
-  .text-box p {
-    font-size: 12px;
-  }
-  .text-box a {
-    font-size: 12px;
-  }
-  .nav-links ul li {
-    display: block;
-  }
-  .nav-links {
-    position: absolute;
-    background: crimson;
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    right: -200px;
-    text-align: left;
-    z-index: 2;
-    -webkit-transition: 1s;
-    transition: 1s;
-  }
-  nav .fa {
-    display: block;
-    color: white;
-    margin: 10px;
-    font-size: 22px;
-    cursor: pointer;
-  }
-  .nav-links ul {
-    padding: 30px;
-  }
-  .nav-links ul li::after {
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: white;
-    display: block;
-    margin: auto;
-  }
-  .nav-links ul li:hover::after {
-    width: none;
-    color: white;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    text-align: center;
-  }
-  .nav-links ul li:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  .nav-links ul li a:hover {
-    color: white;
-  }
-}
-
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -249,19 +202,330 @@ button {
 button::after {
   content: '';
   width: 0%;
-  height: 2px;
-  background: crimson;
+  height: 3px;
+  background: white;
   display: block;
   margin: auto;
 }
 
 button:hover::after {
-  width: 100%;
+  width: 90%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
+button:hover {
+  background-color: crimson;
+  color: white;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#courses {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.527)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527));
+}
+
+#courses .courses {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+#courses .section-title {
+  font-size: 4rem;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  text-align: center;
+}
+
+#courses .section-title span {
+  color: crimson;
+}
+
+#courses .course-top {
+  font-size: 1.4rem;
+  margin-top: 5px;
+  line-height: 2.5rem;
+  font-weight: 300;
+  letter-spacing: .05rem;
+}
+
+#courses .course-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+#courses .course-item {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+  background-image: url(./images/courses.jpg);
+  background-size: cover;
+  margin: 10px 5%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#courses .course-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  opacity: .8;
+  z-index: -1;
+}
+
+#courses .icon {
+  height: 80px;
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+#courses .icon img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#courses .course-item h2 {
+  font-size: 2rem;
+  color: crimson;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#courses .course-item h2 span {
+  color: white;
+}
+
+#courses .course-item h2:hover {
+  color: white;
+}
+
+#courses .course-item h2 span:hover {
+  color: crimson;
+}
+
+#courses .course-item p {
+  font-size: 1.4rem;
+  color: white;
+  text-align: left;
+  line-height: 1.9rem;
+}
+
+.campus {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.campus h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  text-align: center;
+}
+
+.campus h1 span {
+  color: crimson;
+}
+
+.campus p {
+  font-size: 1.4rem;
+  margin-top: 5px;
+  line-height: 2.5rem;
+  font-weight: 300;
+  letter-spacing: .05rem;
+}
+
+.campus-col {
+  margin-top: 50px;
+  height: 700px;
+  width: 400px;
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.campus-col img {
+  width: 100%;
+  -webkit-transition: all  0.5s;
+  transition: all  0.5s;
+  display: block;
+}
+
+.campus-col:hover img {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.layer:hover {
+  background: #e2beff;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(226, 190, 255, 0.597076)), color-stop(42%, rgba(166, 103, 255, 0.599877)), to(rgba(157, 0, 0, 0.602679)));
+  background: linear-gradient(180deg, rgba(226, 190, 255, 0.597076) 0%, rgba(166, 103, 255, 0.599877) 42%, rgba(157, 0, 0, 0.602679) 100%);
+}
+
+#dubai:hover {
+  background: #c0beff;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(192, 190, 255, 0.597076)), color-stop(64%, rgba(255, 218, 103, 0.599877)), to(rgba(0, 0, 0, 0.602679)));
+  background: linear-gradient(180deg, rgba(192, 190, 255, 0.597076) 0%, rgba(255, 218, 103, 0.599877) 64%, rgba(0, 0, 0, 0.602679) 100%);
+}
+
+#britain:hover {
+  background: #befffd;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(190, 255, 253, 0.597076)), color-stop(69%, rgba(255, 238, 103, 0.55506)), to(rgba(13, 117, 0, 0.569065)));
+  background: linear-gradient(180deg, rgba(190, 255, 253, 0.597076) 0%, rgba(255, 238, 103, 0.55506) 69%, rgba(13, 117, 0, 0.569065) 100%);
+}
+
+.layer h3 {
+  color: white;
+  width: 100%;
+  font-weight: 500;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+
 @media (max-width: 700px) {
+  .text-box h1 {
+    font-size: 22px;
+  }
+  .text-box p {
+    font-size: 12px;
+  }
+  .text-box a {
+    font-size: 12px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    background: crimson;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  nav .fa {
+    display: block;
+    color: white;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+  .nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+  }
+  .nav-links ul li:hover::after {
+    width: none;
+    color: white;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    text-align: center;
+  }
+  .nav-links ul li:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .nav-links ul li a:hover {
+    color: white;
+  }
   .about .image {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 0px;
@@ -302,6 +566,77 @@ button:hover::after {
     font-size: 12px;
     color: white;
     padding: 1rem 0;
+  }
+  #courses .section-title {
+    font-size: 2.5rem;
+    letter-spacing: .4rem;
+    line-height: 3rem;
+  }
+  #courses .course-top {
+    font-size: 12px;
+    line-height: 2rem;
+  }
+  #courses .course-item {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(./images/courses.jpg);
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  #courses .course-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    opacity: .8;
+    z-index: -1;
+  }
+  #courses .icon {
+    height: 50px;
+    width: 50px;
+  }
+  #courses .course-item h2 {
+    font-size: 1.7rem;
+  }
+  #courses .course-item p {
+    font-size: 1rem;
+    color: white;
+  }
+  .campus {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .campus h1 {
+    font-size: 2.5rem;
+    letter-spacing: .4rem;
+    line-height: 3rem;
+  }
+  .campus p {
+    font-size: 12px;
+    line-height: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
