@@ -249,7 +249,7 @@ button:hover {
   padding: 100px 0;
 }
 
-#courses .section-title {
+.section-title {
   font-size: 4rem;
   font-weight: 300;
   color: black;
@@ -259,7 +259,7 @@ button:hover {
   text-align: center;
 }
 
-#courses .section-title span {
+.section-title span {
   color: crimson;
 }
 
@@ -469,6 +469,50 @@ button:hover {
   opacity: 1;
 }
 
+.facilities {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  padding: 50px;
+}
+
+.facilities p {
+  background-color: rgba(0, 0, 0, 0.157);
+  border-radius: 10px;
+}
+
+.facilities h1 {
+  background-color: rgba(0, 0, 0, 0.157);
+}
+
+.facilities img {
+  padding-top: 30px;
+  width: 420px;
+  height: 390px;
+}
+
+.vertical-line {
+  border-right: 1px solid black;
+  height: 493px;
+  position: absolute;
+  padding-left: 500px;
+}
+
+.facilities h1 {
+  color: crimson;
+}
+
+.facilities .facility-left {
+  padding-left: 250px;
+  cursor: text;
+}
+
+.facilities .facility-right {
+  padding-left: 120px;
+}
+
 @media (max-width: 700px) {
   .text-box h1 {
     font-size: 22px;
@@ -623,20 +667,36 @@ button:hover {
     font-size: 1rem;
     color: white;
   }
-  .campus {
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
+  .container-campus {
+    min-height: 0;
+    visibility: hidden;
   }
-  .campus h1 {
-    font-size: 2.5rem;
-    letter-spacing: .4rem;
-    line-height: 3rem;
+  .facilities {
+    width: unset;
+    position: absolute;
+    top: 3250px;
   }
-  .campus p {
+  .facilities p {
     font-size: 12px;
-    line-height: 2rem;
+  }
+  .facilities h1 {
+    font-size: 1rem;
+  }
+  .facilities img {
+    width: 120px;
+    height: 120px;
+  }
+  .vertical-line {
+    border-right: 1px solid black;
+    height: 270px;
+    position: absolute;
+    padding-left: 140px;
+  }
+  .facilities .facility-left {
+    padding-left: unset;
+  }
+  .facilities .facility-right {
+    padding-left: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */
