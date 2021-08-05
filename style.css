@@ -190,7 +190,7 @@ nav .fa {
   padding: 1rem 0;
 }
 
-button {
+.btn {
   font-size: 15px;
   border-radius: 25px;
   height: 50px;
@@ -199,22 +199,7 @@ button {
   color: crimson;
 }
 
-button::after {
-  content: '';
-  width: 0%;
-  height: 3px;
-  background: white;
-  display: block;
-  margin: auto;
-}
-
-button:hover::after {
-  width: 90%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-button:hover {
+.btn:hover {
   background-color: crimson;
   color: white;
 }
@@ -513,6 +498,98 @@ button:hover {
   padding-left: 120px;
 }
 
+.contact {
+  background: #111;
+}
+
+.contact .heading {
+  padding-top: 50px;
+  font-size: 4rem;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  text-align: center;
+}
+
+.contact .heading span {
+  color: crimson;
+}
+
+.contact .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact .row form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50rem;
+          flex: 1 1 50rem;
+  background: #222;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 3rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contact .row form .box {
+  height: 2.5rem;
+  width: 49%;
+  border: .1rem solid white;
+  padding: 0 1rem;
+  margin: 1rem 0;
+  font-size: 1.7rem;
+  color: crimson;
+  background: none;
+  text-transform: none;
+}
+
+.contact .row form .box::-webkit-input-placeholder {
+  text-transform: capitalize;
+}
+
+.contact .row form .box:-ms-input-placeholder {
+  text-transform: capitalize;
+}
+
+.contact .row form .box::-ms-input-placeholder {
+  text-transform: capitalize;
+}
+
+.contact .row form .box::placeholder {
+  text-transform: capitalize;
+}
+
+.contact .row form .address {
+  height: 15rem;
+  width: 100%;
+  padding: 1rem;
+  resize: none;
+}
+
+.contact .row .image img {
+  padding-top: 200px;
+}
+
 @media (max-width: 700px) {
   .text-box h1 {
     font-size: 22px;
@@ -697,6 +774,79 @@ button:hover {
   }
   .facilities .facility-right {
     padding-left: 40px;
+  }
+  .contact {
+    background: #111;
+  }
+  .contact .heading {
+    font-size: 2.5rem;
+    letter-spacing: .4rem;
+    line-height: 3rem;
+  }
+  .contact .row {
+    display: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: unset;
+        flex-wrap: unset;
+  }
+  .contact .row form {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50rem;
+            flex: 1 1 50rem;
+    background: #222;
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 3rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .contact .row form .box {
+    height: 1.5rem;
+    width: 70%;
+    border: .1rem solid white;
+    padding: 8px 1rem;
+    margin: 1rem 0;
+    font-size: 1rem;
+    color: crimson;
+    background: none;
+    text-transform: none;
+  }
+  .contact .row form .box::-webkit-input-placeholder {
+    text-transform: capitalize;
+  }
+  .contact .row form .box:-ms-input-placeholder {
+    text-transform: capitalize;
+  }
+  .contact .row form .box::-ms-input-placeholder {
+    text-transform: capitalize;
+  }
+  .contact .row form .box::placeholder {
+    text-transform: capitalize;
+  }
+  .contact .row form .address {
+    height: 15rem;
+    width: 100%;
+    padding: 1rem;
+    resize: none;
+  }
+  .contact .row .image img {
+    visibility: hidden;
+  }
+  .reset {
+    margin-right: unset;
   }
 }
 /*# sourceMappingURL=style.css.map */
